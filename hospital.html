@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+  <script>
+        $(document).ready(function(){
+            $("#search").click(function(){
+                $("#search-toggle").fadeToggle();
+            });
+        });
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+        .s_icons {
+                padding: 8px;
+                font-size: 25px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                text-decoration: none;
+                margin: 35px 2px;
+                border-radius: 100px;
+        }
+
+        .s_icons:hover {
+                opacity: 0.7;
+        }
+
+      .scrolling-updates{
+        background: #00A950;
+        color: white;
+        height: 27px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .menu-1{
+          height: 50px;
+      }
+      .menu-2{
+        height: 50px;
+      }
+      .border-right{
+          border-right: 1px solid black; 
+          height: 40px;  
+      }
+      .sp-hover:hover{
+          opacity: 0.5;
+          font-weight: bold;
+          cursor: pointer;
+          font-size: 20px;
+      }
+      .Specialities{
+        width: 180px;
+        height: 25px;
+        box-sizing: border-box;
+        padding-left: 100px;
+        font-size: 14px;
+      }
+      .opd{
+        box-sizing: border-box;
+        padding: 40px 75px;
+      }
+      .opd-inner{
+        font-size: 70px;
+      }
+      .opd-text{
+        box-sizing: border-box;
+        padding-left: 65px;
+      }
+  </style>
+
+</head>
+<body>
+
+    <div id="search-toggle" class="container-fluid" style="display: none; height: 100px; box-sizing: border-box; padding: 25px 550px; background: #01793A;">
+            <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                          <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </form>
+            </nav>
+    </div>
+
+    <div class="container-fluid scrolling-updates" style="margin: 0;">
+        <marquee scrollamount="4">
+                As per the GOI circular on price capping of Orthopaedic Knee implant by NPPA(National Pharmaceutical Pricing Authority), new prices of knee implants have been implemented effective 16th August 2017. For details on knee implant pricing across our hospitals. CLICK HERE | As per GOI’s circular dated 02nd April 2018 on price-capping of stents by NPPA(National Pharmaceutical Pricing Authority), new prices of coronary stents are revised with effect from 01st April, 2018. For details on stent pricing.CLICK HERE
+        </marquee>
+    </div>
+    <div class="row" style="margin: 0;">
+        <div class="col-md-2 menu-1" style="background: white;"></div>
+        <div class="col-md-5 menu-1" id="menu-bar-1" style="background: red;">
+                <nav class="navbar navbar-default" style="height: 50px; width: 100%;">
+                        <div class="container-fluid">
+                          <div>
+                            <ul class="nav navbar-nav" style="box-sizing: border-box; padding: 5px 0;">
+                              <li class="border-right"><a href="#">Home</a></li>
+                              <li class="border-right"><a href="#">Page 1</a></li>
+                              <li class="border-right"><a href="#">Page 2</a></li> 
+                              <li class="border-right"><a href="#">Page 3</a></li>
+                              <li class="border-right"><a href="#">Page 4</a></li>
+                              <li><a href="#">Page 5</a></li> 
+                            </ul>
+                          </div>
+                        </div>
+                </nav>                      
+        </div>
+        <div class="col-md-2 menu-1" style="background: black;">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar" id="search">
+                          <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="col-md-2 menu-1" style="background: pink;">
+
+        <!-- Trigger the modal with a button -->
+        <button style="width: 200px; font-size: 14px; height: 60px; border-radius: 0 0 10px 10px; background: #ED1F24;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-ambulance" aria-hidden="true"></i>
+                EMERGENCY NO.
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Emergency No.</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <table border="1">
+                        <tr>
+                            <td>Sahil</td>
+                            <td>Sahil</td>
+                        </tr>
+                        <tr>
+                                <td>Sahil</td>
+                                <td>Sahil</td>
+                            </tr>
+                            <tr>
+                                    <td>Sahil</td>
+                                    <td>Sahil</td>
+                                </tr>
+                                <tr>
+                                        <td>Sahil</td>
+                                        <td>Sahil</td>
+                                    </tr>
+                    </table>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        </div>
+    </div>  
+    <br>
+         
+    <div class="row" style="margin: 0;">
+        <div class="col-md-3 menu-2" style="background: rebeccapurple"></div>
+        <div class="col-md-4 menu-2" style="background: plum; padding: 0;">
+         
+                <nav style="width:465px; height: 50px;" class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                          <div>
+                            <ul class="nav navbar-nav">
+                              <li class="active"><a href="#">Home</a></li>
+                              <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Page 1-1</a></li>
+                                  <li><a href="#">Page 1-2</a></li>
+                                  <li><a href="#">Page 1-3</a></li> 
+                                </ul>
+                              </li>
+                              <li><a href="#">Page 2</a></li> 
+                              <li><a href="#">Page 3</a></li> 
+                            </ul>
+                          </div>
+                        </div>
+                </nav>            
+            
+        </div>
+        <div class="col-md-2 menu-2" style="background: peru">
+                <!-- Trigger the modal with a button -->
+                <button style="width: 200px; font-size: 14px; height: 60px; border-radius: 0 0 10px 10px; background: #ED1F24;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-ambulance" aria-hidden="true"></i>
+                        DOCTOR's login
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+
+        </div>
+        <div class="col-md-2 menu-2" style="background: darkcyan"></div>
+    </div>
+                                  
+    
+    <div id="myCarousel0" style="height: 422px;" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel0" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel0" data-slide-to="1"></li>
+              <li data-target="#myCarousel0" data-slide-to="2"></li>
+              <li data-target="#myCarousel0" data-slide-to="3"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="height: 422px;" role="listbox">
+              <div class="item active">
+                <img src="image/1.jpg" alt="Chania">
+              </div>
+          
+              <div class="item">
+                <img src="image/2.jpg" alt="Chania">
+              </div>
+          
+              <div class="item">
+                <img src="image/3.jpg" alt="Flower">
+              </div>
+          
+              <div class="item">
+                <img src="image/4.jpg" alt="Flower">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel0" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel0" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+    </div>
+          
+
+    <div class="container-fluid" style="height: 735px; background: rgb(129, 116, 64);">
+        <div class="row">
+            <div class="col-md-8" style="background: darkkhaki; height: 735px;">
+                <div class="row" style="background: gainsboro; height: 100px; box-sizing: border-box; padding: 20px 125px;
+                font-size: 35px; color: white;">+ News & Events
+            </div>
+            <div class="row">
+                <div class="col-md-2" style="background: white; height: 550px;"></div>
+                <div class="col-md-5" style="background: yellowgreen; height: 550px;">
+                
+                        <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="image/1.jpg" width="100%" height="100%" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                                  <a href="#" class="card-link">Card link</a>
+
+                                </div>
+                        </div>
+
+                </div>
+                <div class="col-md-5" style="background: bisque; height: 550px;">
+
+                        <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="image/1.jpg" alt="Card image cap" width="100%" height="100%">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                                  <a href="#" class="card-link">Card link</a>
+                                </div>
+                        </div>
+
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4" style="background: dimgray; height: 735px;"></div>
+        </div>
+    </div>
+
+            <!--footer-->
+    <div class="container-fluid" id="footer" style="background: white; height: 350px; box-sizing: border-box; padding: 0 110px;">
+        <div class="row">
+            <div class="col-md-3" style="box-sizing: border-box; padding: 10px;">
+
+                    <div class="row" style="border-bottom: 1px solid black; box-sizing: border-box; padding: 10px;"><b style="font-size: 16px;">PATIENT CARE & SERVICES</b></div>
+                    <br><a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;"  class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Admission Process</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Diabetes</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Discharge Process</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Guidelines For Visitors</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Clinical Outcomes</a>
+
+            </div>
+            <div class="col-md-3" style="box-sizing: border-box; padding: 10px;">
+
+                    <div class="row" style="border-bottom: 1px solid black; box-sizing: border-box; padding: 10px;"><b style="font-size: 16px;">ABOUT US</b></div>
+                    <br><a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;"  class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Vision</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Mission</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Values</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Heart failure</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Blog</a>
+
+            </div>
+            <div class="col-md-3" style="box-sizing: border-box; padding: 10px;">
+                    <div class="row" style="border-bottom: 1px solid black; box-sizing: border-box; padding: 10px;"><b style="font-size: 16px;">DISEASES AND CONDITIONS</b></div>
+                    <br><a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;"  class="fa fa-chevron-right" aria-hidden="true"></i>
+                        High Blood Pressure</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Diabetes</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Osteoporosis</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Heart failure</a><br><br>
+                    <a href="#"><i style="font-size: 12px; padding: 0; margin: 0; width: 20px; height: 20px;" class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Cancer</a>
+            </div>
+            <div class="col-md-3" style="box-sizing: border-box; padding: 10px;">
+                <div class="row" style="border-bottom: 1px solid black; box-sizing: border-box; padding: 10px;"><b style="font-size: 16px;">STAY IN TOUCH</b></div>
+                <div class="row" style="box-sizing: border-box; padding-top: 20px;">
+                        Tower A, Unitech Business Park,<br>
+                        Block - F, South City 1, Sector - 41,<br>
+                        Gurgaon, Haryana - 122001
+                </div>
+                <div class="row">
+                        <a href="#" class="fa fa-facebook s_icons" style="background: #3B5998; color: white"></a>
+                        <a href="#" class="fa fa-twitter s_icons" style="background: #55ACEE; color: white"></a>
+                        <a href="#" class="fa fa-google s_icons" style="background: #dd4b39; color: white"></a>
+                        <a href="#" class="fa fa-linkedin s_icons" style="background: #007bb5; color: white"></a>
+                        <a href="#" class="fa fa-instagram s_icons" style="background: #125688; color: white"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="background: yellowgreen; height: 60px;">
+                    <br>Privacy Policy|Terms & Conditions|Sitemap
+                    <br>
+                    &copy; 2018 Fortis Healthcare. All Rights Reserved.                 
+            </div>
+            <div class="col-md-5"></div>
+            <div class="col-md-3" style="background: #55ACEE; height: 60px;"></div>
+        </div>
+    </div>
+
+                    <!-- Patients Speak -->
+    <div class="container-fluid" style="height: 420px; background: cornflowerblue;">
+        <div class="container" style="height: 420px; background: darkgrey;">
+            <div style="height: 40px;"><h2 class="clrBlck" style="height: 40px; box-sizing: border-box; padding-left: 400px;"><i class="fa fa-comments-o" aria-hidden="true"></i>
+                Patient's Speak</h2>
+            </div>
+
+            <div style="height: 300px; background: darkmagenta; box-sizing: border-box; padding-top: 35px;">
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel" style="height: 260px;">
+                            <!-- Indicators not needed here-->
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox" style="height: 260px;">
+                                <div class="item active" style="height: 260px;">
+                                    <div class="col-md-6" style="background: cadetblue; height: 260px;">
+                                        <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                        <div class="col-md-7" style="background: cyan; height: 260px;">
+                                            <div class="row">
+                                            <p style="box-sizing: border-box; padding-top: 10px;">
+                                                <b>Mr. Venkatesh</b><hr>
+                                            </p>
+                                            </div>
+                                            <div class="row">
+                                                <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                </p>
+                                                <p>I would like to accord my appreciation to 
+                                                    Dr. Sudarshan & team of emergency section, 
+                                                    for having received my known person Mrs. Sarojamma 
+                                                    yesterday night for her cardiac issue, 
+                                                    very grateful to the team.
+                                                </p>
+                                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                            <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="background: chocolate; height: 260px;">
+                                        <div class="col-md-7" style="background: cyan; height: 260px;">
+                                            <div class="row">
+                                                <p style="box-sizing: border-box; padding-top: 10px;">
+                                                    <b>Mr. Gurmeet, Mohali</b><hr>
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                </p>
+                                                <p>A big thanks to Dr. Amit K. Mandal, 
+                                                   for treating my ailing and critically 
+                                                   sick Grand Ma so kindly and diligently 
+                                                   at Fortis Hospital, Mohali.
+                                                   <br>Hope You shall continue to do your best!
+                                                </p>
+                                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                            <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                        </div>
+                                        <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                    </div>
+                                </div>
+                          
+                                <div class="item">
+                
+                                    <div class="col-md-6" style="background: cadetblue; height: 260px;">
+                                            <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                            <div class="col-md-7" style="background: cyan; height: 260px;">
+                                                <div class="row">
+                                                    <p style="box-sizing: border-box; padding-top: 10px;">
+                                                        <b>Mr. Venkatesh</b><hr>
+                                                    </p>
+                                                </div>
+                                                <div class="row">
+                                                    <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                    </p>
+                                                    <p>I would like to accord my appreciation to 
+                                                       Dr. Sudarshan & team of emergency section, 
+                                                       for having received my known person Mrs. Sarojamma 
+                                                       yesterday night for her cardiac issue, 
+                                                       very grateful to the team.
+                                                    </p>
+                                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                                <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6" style="background: chocolate; height: 260px;">
+                                                <div class="col-md-7" style="background: cyan; height: 260px;">
+                                                    <div class="row">
+                                                        <p style="box-sizing: border-box; padding-top: 10px;">
+                                                            <b>Mr. Gurmeet, Mohali</b><hr>
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                        </p>
+                                                        <p>A big thanks to Dr. Amit K. Mandal, 
+                                                           for treating my ailing and critically 
+                                                           sick Grand Ma so kindly and diligently 
+                                                           at Fortis Hospital, Mohali.
+                                                           <br>Hope You shall continue to do your best!
+                                                        </p>
+                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                                    <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                                </div>
+                                                <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                        </div>
+                                    </div>
+                
+                            
+                          
+                              <div class="item">
+                
+                                    <div class="col-md-6" style="background: cadetblue; height: 260px;">
+                                            <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                            <div class="col-md-7" style="background: cyan; height: 260px;">
+                                                <div class="row">
+                                                    <p style="box-sizing: border-box; padding-top: 10px;">
+                                                        <b>Mr. Venkatesh</b><hr>
+                                                    </p>
+                                                </div>
+                                                <div class="row">
+                                                    <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                    </p>
+                                                    <p>I would like to accord my appreciation to 
+                                                       Dr. Sudarshan & team of emergency section, 
+                                                       for having received my known person Mrs. Sarojamma 
+                                                       yesterday night for her cardiac issue, 
+                                                       very grateful to the team.
+                                                    </p>
+                                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                                <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="background: chocolate; height: 260px;">
+                                                <div class="col-md-7" style="background: cyan; height: 260px;">
+                                                    <div class="row">
+                                                        <p style="box-sizing: border-box; padding-top: 10px;">
+                                                            <b>Mr. Gurmeet, Mohali</b><hr>
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                        </p>
+                                                        <p>A big thanks to Dr. Amit K. Mandal, 
+                                                           for treating my ailing and critically 
+                                                           sick Grand Ma so kindly and diligently 
+                                                           at Fortis Hospital, Mohali.
+                                                           <br>Hope You shall continue to do your best!
+                                                        </p>
+                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                                    <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                                </div>
+                                                <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                        </div>
+                                    </div>
+                                
+                                
+                          
+                              <div class="item">
+                                
+                                    <div class="col-md-6" style="background: cadetblue; height: 260px;">
+                                            <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                            <div class="col-md-7" style="background: cyan; height: 260px;">
+                                                <div class="row">
+                                                    <p style="box-sizing: border-box; padding-top: 10px;">
+                                                        <b>Mr. Venkatesh</b><hr>
+                                                    </p>
+                                                </div>
+                                                <div class="row">
+                                                    <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                    </p>
+                                                    <p>I would like to accord my appreciation to 
+                                                       Dr. Sudarshan & team of emergency section, 
+                                                       for having received my known person Mrs. Sarojamma 
+                                                       yesterday night for her cardiac issue, 
+                                                       very grateful to the team.
+                                                    </p>
+                                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                                <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="background: chocolate; height: 260px;">
+                                                <div class="col-md-7" style="background: cyan; height: 260px;">
+                                                    <div class="row">
+                                                        <p style="box-sizing: border-box; padding-top: 10px;">
+                                                            <b>Mr. Gurmeet, Mohali</b><hr>
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p><i class="fa fa-quote-left" style="color: #FF0000" aria-hidden="true"></i>
+                                                        </p>
+                                                        <p>A big thanks to Dr. Amit K. Mandal, 
+                                                           for treating my ailing and critically 
+                                                           sick Grand Ma so kindly and diligently 
+                                                           at Fortis Hospital, Mohali.
+                                                           <br>Hope You shall continue to do your best!
+                                                        </p>
+                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3" style="background: darkorange; height: 260px; box-sizing: border-box; padding-top: 25px;">
+                                                    <div style="border-radius: 200px; border: 1px solid #DFDFDF;"><img src="image/0.77814400_1459153260_speak.jpg" width="100%" height="100%"/></div>
+                                                </div>
+                                                <div class="col-md-2" style="background: coral; height: 260px;"></div>
+                                        </div>
+                                    </div>
+                
+                                
+                            </div>
+                          
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+                    <!--App promotion-->
+    <div class="container-fluid" style="background: url(image/app-promotion.jpg); height: 400px; background-repeat: no-repeat; background-size: cover; opacity: 0.7;">
+        <div class="container" style="height: 100px; width: 50%; margin: 118px 70px 0 70px; color: black; font-size: 36px; box-sizing: border-box; padding: 0 145px; font-weight: bold;
+            background: yellowgreen;">Now health care <br>in your pocket
+        </div>
+        <div class="container" style="height: 182px; width: 50%; margin: 0 70px; color: black; font-size: 36px; box-sizing: border-box; padding: 0 145px; font-weight: bold;
+            background: white;">
+            <img onclick="javascript:location.href='https://itunes.apple.com/in/app/';" style="margin-top: 10px; cursor: pointer; cursor: pointer; width: 178px;" src="image/app-store.jpg"/>
+            <img onclick="javascript:location.href='https://play.google.com/store/apps/';" src="image/play-store.jpg" style="cursor: pointer; width: 178px; cursor: pointer;"/>
+            <or style="font-size: 25px; margin-left: 175px;">OR</or>
+            <nav class="navbar navbar-light bg-light" style="">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Enter mobile number" aria-label="Search" style="">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+                    </form>
+            </nav>
+        </div>
+
+    </div>
+    
+                    <!--Our Key Doctors-->
+    <div class="container-fluid" style="height: 500px;">
+        <div class="container" style="height: 500px;">
+                <div style="height: 40px;"><h2 class="clrBlck" style="height: 40px; box-sizing: border-box; padding-left: 400px;"><i class="fa fa-stethoscope" aria-hidden="true"></i>
+                    Our Key Doctors</h2>
+                </div>
+                <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="height: 450px;">
+                        <!-- Indicators not needed here-->
+                      
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="height: 450px;">
+                          <div class="item active" style="height: 438px;">
+                            <div class="row">
+                                <div class="col-md-3" style="width:292px; height: 438px; background: olive; box-sizing: border-box; padding: 10px;">
+                                        <div class="card" style="width: 292px;">
+                                                <img class="card-img-top" width="270px" height="250px" src="image/Dummy-image.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Card title</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3" style="width:292px; height: 438px; background: olive; box-sizing: border-box; padding: 10px;">
+                                        <div class="card" style="width: 292px;">
+                                                <img class="card-img-top" width="270px" height="250px" src="image/Dummy-image.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Card title</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3" style="width:292px; height: 438px; background: olive; box-sizing: border-box; padding: 10px;">
+                                        <div class="card" style="width: 292px;">
+                                                <img class="card-img-top" width="270px" height="250px" src="image/Dummy-image.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Card title</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3" style="width:292px; height: 438px; background: olive; box-sizing: border-box; padding: 10px;">
+                                        <div class="card" style="width: 292px;">
+                                                <img class="card-img-top" width="270px" height="250px" src="image/Dummy-image.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Card title</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                        </div>
+                                </div>
+                            </div>
+                          </div>
+                      
+                          <!--<div class="item" style="height: 438px;">
+                            <img src="img_chania2.jpg" alt="Chania">
+                          </div>-->
+                      
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" style="height: 438px;" href="#myCarousel2" role="button" data-slide="prev">
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel2" style="height: 438px;" role="button" data-slide="next">
+                          <span class="sr-only">Next</span>
+                        </a>
+                </div>
+        </div>
+    </div>
+    
+                    <!--Clinical Specialities-->
+    <div class="container" style="height: 315px;">
+            <div style="height: 40px;"><h2 class="clrBlck" style="height: 40px; box-sizing: border-box; padding-left: 400px;"><i style="color: #FF0000;" class="fa fa-stethoscope" aria-hidden="true"></i>
+                Clinical Specialities</h2>
+            </div>
+            <div class="container" style="height: 230px;">
+                <div class="row" style="height: 230px; box-sizing: border-box; padding-left: 110px;">
+                    <div class="col-md-3" style="height: 230px; ">
+                        <div class="row sp-hover" style="margin: 25px; border-radius: 200px; width:180px; height: 180px; background: url('image/cardi.jpg'); background-repeat: no-repeat; background-size: cover; box-sizing: border-box; padding: 50px;"></div>
+                        <div class="row Specialities">Cardiology</div>
+                    </div>
+                    <div class="col-md-3" style="height: 230px; ">
+                            <div class="row sp-hover" style="margin: 25px; border-radius: 200px; width:180px; height: 180px; background: url('image/gyn.jpg'); background-repeat: no-repeat; background-size: cover; box-sizing: border-box; padding: 50px;"></div>
+                            <div class="row Specialities" style="padding-left: 38px; width: 260px;">Obstetrics and Gynaecology</div>
+                    </div>
+                    <div class="col-md-3" style="height: 230px; ">
+                            <div class="row sp-hover" style="margin: 25px; border-radius: 200px; width:180px; height: 180px; background: url('image/nuerology.jpg'); background-repeat: no-repeat; background-size: cover; box-sizing: border-box; padding: 50px;"></div>
+                            <div class="row Specialities">Neurology</div>
+                    </div>
+                    <div class="col-md-3" style="height: 230px; ">
+                            <div class="row sp-hover" style="margin: 25px; border-radius: 200px; width:180px; height: 180px; background: url('image/km.jpg'); background-repeat: no-repeat; background-size: cover; box-sizing: border-box; padding: 50px;"></div>
+                            <div class="row Specialities">Know More</div>
+                    </div>
+
+                    
+                </div>
+            </div>
+    </div>
+                   
+                    <!--OPD and appointment-->
+    <div class="container" style="height: 180px; background: beige;">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row opd"><i class="fa fa-star-half-o opd-inner" aria-hidden="true"></i></div>
+                <div class="row opd-text">Specialities</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="row opd"><i class="fa fa-user-md opd-inner" aria-hidden="true"></i></div>
+                <div class="row opd-text">Find Doctors</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="row opd"><i class="fa fa-heartbeat opd-inner" aria-hidden="true"></i></div>
+                <div class="row opd-text">Health Checks</div>
+            </div>
+                
+            <div class="col-md-2">
+                <div class="row opd"><i class="fa fa-calendar opd-inner" aria-hidden="true"></i></div>
+                <div class="row opd-text">OPD Schedule</div>
+            </div>
+            <div class="col-md-4 "><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></div>
+        </div>
+    </div>
+            
+</body>
+</html>
+
+
+
+
+
+
+
